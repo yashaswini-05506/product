@@ -1,16 +1,15 @@
-def product_details(name,product_id,quantity,price):
-    result=(
-        f"Product Name:{name}\n"
-        f"Product ID:{product_id}\n"
-        f"Quantity:{quantity}\n"
-        f"Price:{price}"
+def product_details(name, product_id, price, quantity):
+    result = (
+        f"Product Name: {name}\n"
+        f"Product ID: {product_id}\n"
+        f"Price: {price}\n"
+        f"Quantity: {quantity}\n"
     )
     return result
 
-if __name__=="__main__":
-    # Sample Output
-    name="Lenovo Laptop"
-    id="P1001"
-    quantity=10
-    price=48000
-    print(product_details(name,product_id,quantity,price))
+if __name__ == "__main__":
+    name = "Laptop"
+    product_id = "P456"
+    price = 1200
+    quantity = 10
+    print(product_details(name, product_id, price, quantity))
